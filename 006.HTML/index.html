@@ -1,3 +1,4 @@
+<!-- Inline will work if internal and inline both has been applied -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY WEBSITE</title>
+    <style>
+        h1{
+            color: red;
+            font-style: italic;
+            font-variant: inherit;
+        }
+
+        div li {   /* DESCENDANT SELECTOR */
+            color: blueviolet;
+        }
+
+        div>h1>span{ /* CHILD SELECTOR */
+            color: brown;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .class1{  /* CLASS SELECTOR */
+            font-style: oblique;
+        }
+
+        .class2{ /* CLASS SELECTOR */
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            color: tomato;
+        };
+        
+
+        .class4{
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+        }
+
+        #1{ /* ID SELECTOR */
+            color: blue;
+        }
+
+
+        input[value]{
+            background-color: blue;
+        }
+
+    </style>
 </head>
 <body>
+    <div>
+        <h1>
+            <span>
+                HELLO GUYS
+            </span>
+        </h1>
+    </div>
+    <div>
+        <span>
+            <h1>
+                HELLO WORLD
+            </h1>
+        </span>
+    </div>
     <h1 >Hello Pepcoders</h1>
     <h2 style="color: blue; font-style: italic; font-family: 'Times New Roman', Times, serif;">Hello Pepcoders 2</h2>
     <div>
@@ -19,6 +77,18 @@
     <br>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXMSm7XtdYXPCSaY_HhQsMuTZPUOEs4eI7B3fV-yQ0QVkzQrLlghRve0BJNUk1R4dhq0&usqp=CAU" alt="Image missing">
     <br>
+    <li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </li>
+    <div>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
     <table border="2">
         <thead>
                 <tr>
@@ -47,6 +117,31 @@
             
         </tbody>
     </table>
+
+    <form >
+        <input type="button" value="Submit">
+        <input type="button" value="Click Here">
+    </form>
+
+    <div class="class1">
+        <p>
+            Hello guys i am Tushar Arora from Rajasthan.
+        </p>
+    </div>
+
+    <div class="class2">
+        I am in UIET CHD pursuing Bachelor of Engineering in Computer Science Engineering with CGPA of 8.2
+    </div>
+
+    <div class="class3" id="1">
+        <p>
+            I Am doing java nowadays.
+        </p>
+    </div>
+
+    <div class="class4">
+        Building Proficiency in Data Structures and Algorithms.
+    </div>
 
 </body>
 </html>
