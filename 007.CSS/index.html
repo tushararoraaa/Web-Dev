@@ -1,0 +1,203 @@
+<!-- Inline will work if internal and inline both has been applied -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <style> /*CSS- CASCADING STYLE SHEET */
+        h1{
+            color: red;
+            font-style: italic;
+            font-variant: inherit;
+        }
+
+        div li {   /* DESCENDANT SELECTOR */
+            color: blueviolet;
+        }
+
+        div>h1>span{ /* CHILD SELECTOR */
+            color: brown;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .class1{  /* CLASS SELECTOR */
+            font-style: oblique;
+        }
+
+        .class2{ /* CLASS SELECTOR */
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            color: tomato;
+        };
+        
+
+        .class4{
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+        }
+
+        #1{ /* ID SELECTOR */
+            color: blue;
+        }
+
+
+        input[value]{
+            background-color: blue;
+        }
+
+        body{
+            background-color: lightcyan;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 20px solid red;
+            border-top: 20px solid #000;
+            border-right: 20px solid #000;
+            margin: 20px;
+            padding: 10px;
+        }
+        .container{
+            border: 2px solid lightsalmon;
+            background-color: tomato;
+            border-radius: 40px;
+            
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-left: 25px; */
+
+            padding: 10px 20px 15px 25px;
+
+
+
+            /* margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px; */
+
+            margin: 20px 10px 20px 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <span>
+                HELLO GUYS
+            </span>
+        </h1>
+    </div>
+    <div>
+        <span>
+            <h1>
+                HELLO WORLD
+            </h1>
+        </span>
+    </div>
+    <h1 >Hello Pepcoders</h1>
+    <h2 style="color: blue; font-style: italic; font-family: 'Times New Roman', Times, serif;">Hello Pepcoders 2</h2>
+    <div>
+        <p style="font-size: large; font-weight: 300; font-style: italic; font-variant: small-caps;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et repellendus, facere iste quasi illum nulla ipsum aliquam veniam perspiciatis, modi necessitatibus, reiciendis dolorem? Fuga inventore modi pariatur velit nemo.</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias dolor repudiandae rerum facilis eveniet consectetur dolorum optio quae eum magni, molestiae commodi. Ipsa dolorum earum placeat. <a href="https://www.wikipedia.com"><span style="color: green; font-style: italic;">Iste ullam</span></a>   eum quo.</p>
+    <a href="https://www.youtube.com">Youtube </a>
+    <br>
+    <a style="color: red;" href="https://www.pepcoding.com">Pepcoding</a>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXMSm7XtdYXPCSaY_HhQsMuTZPUOEs4eI7B3fV-yQ0QVkzQrLlghRve0BJNUk1R4dhq0&usqp=CAU" alt="Image missing">
+    <br>
+    <li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </li>
+    <div>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
+    <table border="2">
+        <thead>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tushar Arora</td>
+                <td>100</td>
+            </tr>
+            <tr style="color: red;">
+                <td>2</td>
+                <td>Love Grover</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rupesh Ahuja</td>
+                <td>100</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <form >
+        <input type="button" value="Submit">
+        <input type="button" value="Click Here">
+    </form>
+
+    <div class="class1">
+        <p>
+            Hello guys i am Tushar Arora from Rajasthan.
+        </p>
+    </div>
+
+    <div class="class2">
+        I am in UIET CHD pursuing Bachelor of Engineering in Computer Science Engineering with CGPA of 8.2
+    </div>
+
+    <div class="class3" id="1">
+        <p>
+            I Am doing java nowadays.
+        </p>
+    </div>
+
+    <div class="class4">
+        Building Proficiency in Data Structures and Algorithms.
+    </div>
+
+    <div class="box">
+        Hello
+    </div>
+
+    <div class="container">
+        <h3>This is Heading 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores vero qui voluptates perferendis deserunt quae accusantium illum, dignissimos possimus rem magnam sequi eaque aliquid. Officia id praesentium qui sequi.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading 2</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugit repellendus labore inventore voluptas. Libero explicabo alias commodi necessitatibus voluptatibus sint molestiae ipsam illum, et, culpa ipsum minus nihil cum.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque laborum maxime commodi vitae rerum quaerat repellat veritatis non necessitatibus similique perspiciatis exercitationem beatae reiciendis doloribus deleniti, consequuntur vero mollitia?</p>
+    </div>
+
+</body>
+</html>
