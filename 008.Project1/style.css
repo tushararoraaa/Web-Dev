@@ -1,70 +1,75 @@
-html{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blueviolet;
-    font-weight: 400;
+header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: blueviolet;
+  font-weight: 400;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
-   
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
 }
 
-nav{
-    width: 20rem;
-    top: 1rem;
-    right: 3rem;
-    position: relative;
+nav {
+  width: 20rem;
+  top: 1rem;
+  right: 3rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+.image1 {
+  width: 92vw;
+  margin: 1rem;
 }
 
-.image1{
-    width: 92vw;
-    margin: 1rem;
+article {
+  display: flex;
+  justify-content: space-between;
 }
+.container {
+  margin: 3rem 2rem;
+  font-size: larger;
+  text-align: center;
 
-article{
-    display: flex;
-    justify-content: space-between;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    
-    margin: 3rem 2rem;
-    width: 60vw;
-    padding: 10px 20px 10px 20px;
-    
-    text-align: justify;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    /* border: 2px solid red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  /* border: 2px solid red;
     border-radius: 5px; */
 }
 
-.image2{
-    
-    width: 5rem;
+.image2 {
+  width: 5rem;
 }
 
-footer{
-    text-align: center;
-    background-color: black;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 4rem;
+  color: white;
+  font-size: x-large;
 }
 
-footer h1{
-    padding: 1rem;
-    color: white;
-    margin-bottom: 0;
+a:hover {
+  color: red;
+  font-size: 2rem;
+  
+}
+
+footer:hover{
+    background-color: brown;
 }
